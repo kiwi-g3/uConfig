@@ -1,0 +1,97 @@
+! Title: Personal filters and adjustments for uBlock Origin (uBO)
+! Expires: 28 days
+
+! Wikia
+wikia.com##.avatars
+wikia.com##.community-page-rail-module
+wikia.com##.featured-video
+wikia.com##.rail-sponsored-content
+wikia.com##.wds-global-footer
+wikia.com###mixed-content-footer
+wikia.com###mystory
+wikia.com###rsw-discord
+wikia.com###TOP_BOXAD
+wikia.com###top_boxad
+wikia.com###WikiaBarWrapper
+wikia.com###WikiaFooter
+wikia.com###WikiaTopAds
+
+! Fandom
+fandom.com##.avatars
+fandom.com##.community-page-rail-module
+fandom.com##.discord-module
+fandom.com##.featured-video
+fandom.com##.rail-sponsored-content
+fandom.com##.wds-global-footer
+fandom.com###mixed-content-footer
+fandom.com###mystory
+fandom.com###rsw-discord
+fandom.com###TOP_BOXAD
+fandom.com###top_boxad
+fandom.com###WikiaBarWrapper
+fandom.com###WikiaFooter
+fandom.com###WikiaTopAds
+
+! Discord widget
+||discordapp.com/widget
+||discord.com/widget
+
+! 06/05/2020 https://www.youtube.com
+youtube.com###button > .ytd-topbar-menu-button-renderer.style-scope
+youtube.com###copyright
+youtube.com###sponsor-button
+youtube.com###ticker > .ytd-masthead.style-scope
+youtube.com###vat-notice
+youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(2)
+youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(3)
+youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(4)
+youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(5)
+! Enable YouTube playback progress/history
+@@||youtube.com/api/stats/watchtime*
+
+! 06/05/2020 https://translate.google.com
+translate.google.com##.notification-container.tlid-notification-container
+
+! 18/06/2020 https://hooktube.com
+hooktube.com##.alert-dismissable.alert-warning.alert
+hooktube.com##.col-sm-12.col-md-4.col-lg-4
+hooktube.com##.mr-auto.navbar-nav
+
+! 18/06/2020 https://old.reddit.com
+old.reddit.com###redesign-beta-optin-btn
+
+! 04/08/2020 isitdownrightnow.com - Allow viewing of current facebook comments on isitdownrightnow.com
+@@||connect.facebook.net^$script,domain=isitdownrightnow.com
+@@||www.facebook.com^$subdocument,domain=isitdownrightnow.com
+
+! 2021-05-22 https://boards.4chan(nel).org
+boards.4channel.org##.boardTitle
+boards.4channel.org##.qr-link-container
+boards.4channel.org###togglePostFormLink
+boards.4channel.org##.adc-resp-bg
+boards.4channel.org###boardNavDesktopFoot
+boards.4chan.org##.boardTitle
+boards.4chan.org##.qr-link-container
+boards.4chan.org###togglePostFormLink
+boards.4chan.org##.adc-resp-bg
+boards.4chan.org###boardNavDesktopFoot
+
+! 2021-03-08 https://invidious.tube
+invidious.tube##div.h-box:nth-of-type(2)
+
+
+! Wikia/Fandom network filters
+||discordapp.com/widget^$domain=fandom.com
+||discord.com/widget^$domain=fandom.com
+||discordapp.com/widget^$domain=wikia.com
+||discord.com/widget^$domain=wikia.com
+||fandomquiz.typeform.com^$domain=fandom.com
+||fandomquiz.typeform.com^$domain=wikia.com
+
+! fandom.com
+fandom.com###WikiaRail > .rail-module
+fandom.com##.wds-global-navigation__links
+fandom.com##.wds-global-navigation__start-a-wiki > .wds-global-navigation__link-button.wds-is-secondary.wds-button
+
+! 2020-10-17 https://knowyourmeme.com
+knowyourmeme.com##div.combo-wrapper
