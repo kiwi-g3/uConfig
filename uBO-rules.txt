@@ -1,0 +1,137 @@
+# Default uBlock Origin (uBO) rules
+no-large-media: behind-the-scene false
+behind-the-scene * * noop
+behind-the-scene * 1p-script noop
+behind-the-scene * 3p noop
+behind-the-scene * 3p-frame noop
+behind-the-scene * 3p-script noop
+behind-the-scene * image noop
+behind-the-scene * inline-script noop
+
+# Medium mode dynamic filtering
+* * 3p-frame block
+* * 3p-script block
+
+# LocalCDN rules
+* ajax.googleapis.com * noop
+* ajax.aspnetcdn.com * noop
+* ajax.microsoft.com * noop
+* cdnjs.cloudflare.com * noop
+* code.jquery.com * noop
+* cdn.jsdelivr.net * noop
+* fonts.googleapis.com * noop
+* yastatic.net * noop
+* yandex.st * noop
+* apps.bdimg.com * noop
+* libs.baidu.com * noop
+* cdn.staticfile.org * noop
+* cdn.bootcss.com * noop
+* mat1.gtimg.com * noop
+* lib.sinaapp.com * noop
+* upcdn.b0.upaiyun.com * noop
+* stackpath.bootstrapcdn.com * noop
+* maxcdn.bootstrapcdn.com * noop
+* netdna.bootstrapcdn.com * noop
+* use.fontawesome.com * noop
+* ajax.cloudflare.com * noop
+* akamai-webcdn.kgstatic.net * noop
+* gitcdn.github.io * noop
+* vjs.zencdn.net * noop
+* cdn.plyr.io * noop
+* cdn.materialdesignicons.com * noop
+* cdn.ravenjs.com * noop
+* js.appboycdn.com * noop
+* cdn.embed.ly * noop
+* cdn.datatables.net * noop
+* mathjax.rstudio.com * noop
+* sdn.geekzu.org * noop
+* ajax.proxy.ustclug.org * noop
+* unpkg.com * noop
+* pagecdn.io * noop
+* cdn.css.net * noop
+* cdnjs.loli.net * noop
+* ajax.loli.net * noop
+* fonts.loli.net * noop
+* lib.baomitu.com * noop
+* cdn.bootcdn.net * noop
+* fonts.gstatic.com * noop
+
+# Enable disqus comments on all sites
+* disqus.com * noop
+* disquscdn.com * noop
+
+# 4chan(nel) convenience rules
+boards.4chan.org google.com * noop
+boards.4chan.org pastebin.com * noop
+boards.4chan.org streamable.com * noop
+boards.4chan.org twitframe.com * noop
+boards.4chan.org twitter.com * noop
+boards.4chan.org youtube.com * noop
+boards.4chan.org strawpoll.me * noop
+boards.4chan.org edgecastcdn.net * noop
+boards.4chan.org 4cdn.org * noop
+boards.4channel.org google.com * noop
+boards.4channel.org pastebin.com * noop
+boards.4channel.org streamable.com * noop
+boards.4channel.org twitframe.com * noop
+boards.4channel.org twitter.com * noop
+boards.4channel.org youtube.com * noop
+boards.4channel.org strawpoll.me * noop
+boards.4channel.org edgecastcdn.net * noop
+boards.4channel.org 4cdn.org * noop
+
+# Other rules
+# uBO sorts by top level domain first (com, org, co.uk), then the next subdomain etc
+www.bing.com a-msedge.net * noop
+www.facebook.com fbcdn.net * noop
+fandom.com nocookie.net * noop
+github.com githubassets.com * noop
+google.com gstatic.com * noop
+hooktube.com embedly.com * noop
+hooktube.com google.com * noop
+hooktube.com youtube.com * noop
+hooktube.com ytimg.com * noop
+hooktube.com cloudflare.net * noop
+knowyourmeme.com embedly.com * noop
+knowyourmeme.com google.com * noop
+knowyourmeme.com kym-cdn.com * noop
+knowyourmeme.com twitter.com * noop
+knowyourmeme.com youtube.com * noop
+knowyourmeme.com ytimg.com * noop
+knowyourmeme.com edgecastcdn.net * noop
+knowyourmeme.com footprint.net * noop
+knowyourmeme.com msecnd.net * noop
+outlook.live.com akamaiedge.net * noop
+outlook.live.com office.net * noop
+www.quora.com quoracdn.net * noop
+old.reddit.com redditmedia.com * noop
+old.reddit.com redditstatic.com * noop
+old.reddit.com reddit.map.fastly.net * noop
+twitter.com twimg.com * noop
+www.virustotal.com googlehosted.com * noop
+www.youtube.com google.com * noop
+www.youtube.com gstatic.com * noop
+www.amazon.co.uk amazon.com * noop
+www.amazon.co.uk media-amazon.com * noop
+www.amazon.co.uk ssl-images-amazon.com * noop
+www.dailymail.co.uk and.co.uk * noop
+www.ebay.co.uk ebay.com * noop
+www.ebay.co.uk ebaystatic.com * noop
+
+# # Google recaptcha
+# * https://www.google.com/recaptcha/ script noop
+# * https://www.gstatic.com/recaptcha/ script noop
+# * https://www.google.com/recaptcha/ sub_frame noop
+
+# hCaptcha
+* hcaptcha.com * noop
+
+# uBO places "site resource action" rules after "site * action" rules when sorting by rule type
+# Enable google noscript recaptcha on 4chan(nel)
+# boards.4chan.org https://www.google.com/recaptcha/ sub_frame inherit
+# boards.4channel.org https://www.google.com/recaptcha/ sub_frame inherit
+# # Enable google script recaptcha
+# boards.4chan.org https://www.google.com script noop
+# boards.4chan.org https://www.gstatic.com script noop
+# boards.4channel.org https://www.google.com script noop
+# boards.4channel.org https://www.gstatic.com script noop
